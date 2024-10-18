@@ -1,0 +1,15 @@
+[project]
+name = "http-backend"
+version = "0.1.0"
+dependencies = [
+    "fastapi[standard]>=0.115.2",
+    "html2text"
+]
+
+[tool.uv.sources]
+html2text = {workspace = true}
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=8.3.3",
+]

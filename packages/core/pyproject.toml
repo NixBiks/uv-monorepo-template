@@ -1,0 +1,19 @@
+[project]
+name = "core"
+version = "0.1.0"
+dependencies = [
+    "selectolax>=0.3.24",
+    "html2text",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=8.3.3",
+]
+
+[tool.uv.sources]
+html2text = { workspace = true }

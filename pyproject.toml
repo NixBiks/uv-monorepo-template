@@ -1,0 +1,7 @@
+[tool.uv]
+dev-dependencies = [
+    "ruff>=0.7"
+]
+
+[tool.uv.workspace]
+members = ["packages/*", "apps/*"]
